@@ -1,17 +1,19 @@
-# Airbnb
-Udacity class project
+# README
 
-README
-Installation
+## Installation
+
 This project requires pandas, numpy, matplotlib, sci-kit learn, seaborn, and mplcyberpunk for visualization style. Python version 3.7.3 was used for this project.
 
-Project Motivation
+## Project Motivation
+
 This project looks at the factors that impact cost of an Airbnb in Seattle. I’m soon interested in renting my own house out on Airbnb, and I wanted to have an idea of what about my house, my location, or myself, would allow me charge more or less than other houses on the market. I look first at factors like zipcode and size, and how they interact with each other. Then I look at a simple model to pull in other factors that may influence price.
 
-File Descriptions
+## File Descriptions
+
 This repository has two primary files Airbnb_descriptive_dark.ipynb, and Airbnb_model_dark.ipynb. The former looks at some descriptive statistics about price and looks for simple correlations with price. The latter builds a model using numerical and categorical variables to predict Airbnb price. Both files load in the necessary libraries.
 
-How To Interact With Project
+## How To Interact With Project
+
 I first looked at a distribution of prices of Airbnb’s in seattle and found a slightly bimodal distribution, would could account for the linear model I tried and will describe in a moment not having a very high rsquared. The next thing i did was to examine how the density of Airbnbs in a zipcode impacted price. A scatterplot shows a relationship visually, and a pearson and spearman each showed a positive correlation, though the spearman was noticeably stronger. This is likely to be because the data for zipcode can be considered nominal in nature.
 
 Next, I wanted to see if the number of bedrooms in an airbnb had more influence than density of zipcode. A scatterplot of price and bedroom colored by zipcode shows a linear relationship between number of bedrooms and price. The zipcode colors can be seen rather evenly distributed amongst these points suggesting that impacts of zipcode and bedroom are somewhat independent. A correlation heatmap shows a rsquared of 0.61 between bedrooms and price. This type of visualisation will be more useful if more variables were added to this analysis.
