@@ -22,5 +22,6 @@ Finally, I tried a linear regression model using a subset of features to predict
 
 One other issue with the model is that a few features have coefficients that outweigh any of the other features by several orders of magnitude. This made it hard to understand what besides these 4 features are impacting the model, and suggests it ought to be tuned to have a more balanced set of feature importances. Finally, these 4 most important features were NaN dummys, which makes them hard to interpret, and may indicate that there is an unidentified latent factor accounting for the strength of these features.
 
-Licensing, Authors, Acknowledgements
+## Licensing, Authors, Acknowledgements
+
 The Seattle Airbnb dataset was provided by Kaggle through Udacity.
